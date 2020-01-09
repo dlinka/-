@@ -1,0 +1,101 @@
+Entries: When to Buy or Sell
+The decision about when to buy or sell often is called the entry decision.
+Automated systems generate entry signals that define the exact price and market conditions that tell you when to enter the market whether by buying or by selling.
+
+---
+
+Entries
+The typical trader thinks mostly in terms of the entry signals when she is thinking about a particular trading system.
+Traders believe that the entry is the most important aspect of any trading system.
+交易者们相信入市信号是任何交易系统中最重要的方面.
+
+They might be surprised to find that the Turtles used a very simple entry system based on the channel breakout systems taught by Richard Donchian.
+他们可能会惊讶的发现,海龟们使用了一个非常简单的入市系统,该系统基于Richard Donchian教授的通道突破系统.
+
+The Turtles were given rules for two different but related breakout systems we called System 1 and System 2.
+We were given full discretion to allocate as much of our equity to either system as we wanted.
+Some of us chose to trade all our equity using System 2, some chose to use a 50 percent System 1 and 50 percent System 2 split, and others chose different mixes.
+The two systems were as follows:
+System 1: a shorter-term system based on a 20-day breakout.
+System 2: a simpler long-term system based on a 55-day breakout.
+
+---
+
+Breakouts
+A breakout is defined as the price exceeding the high or low of a particular number of days.
+突破被定义为价格超过特定天数的高点或者低点.
+Thus, a 20-day breakout would be defined as exceeding the high or low of the preceding 20 days.
+因此,20天的突破将被定义为超过前20天的高点或者低点
+
+Turtles always traded at the breakout when it was exceeded during the day and did not wait until the daily close or the open of the following day.
+In the case of opening gaps, the Turtles would enter positions on the open if a market opened through the price of the breakout.
+
+---
+
+System 1 Entry
+Turtles entered positions when the price exceeded by a single tick the high or low of the preceding 20 days.
+当价格超过过去20天的高点或者低点时,海龟们建仓.
+If the price exceeded the 20-day high, the Turtles would buy 1 unit to initiate a long position in the corresponding commodity.
+当价格超过过去20天的高点时,海龟们买入一个头寸单位去建立多头头寸.
+If the price dropped one tick below the low of the last 20 days, the Turtles would sell 1 unit to initiate a short position.
+当价格超过过去20天的低点时,海龟们卖出一个头寸单位去建立空头头寸.
+
+System 1 breakout entry signals would be ignored if the last breakout would have resulted in a winning trade.
+如果最后一次突破是一次盈利性交易,系统1的入市信号将被忽略.
+Note: For the purposes of this test, the last breakout was considered the last breakout in the particular commodity regardless of whether that particular breakout was actually taken or was skipped because of this rule.
+This breakout would be considered a losing breakout if the price subsequent to the date of the breakout moved 2N against the position before a profitable 10-day exit occurred.
+
+The direction of the last breakout was irrelevant to this rule.
+Thus, a losing long breakout or a losing short breakout would enable the subsequent new breakout to be taken as a valid entry regardless of its direction (long or short).
+
+However, if a System 1 entry breakout was skipped because the previous trade had been a winner, an entry would be made at the 55-day breakout to avoid missing major moves.
+This 55-day breakout was considered the failsafe breakout point.
+
+At any given point, if a trader was out of the market, there would always be some price that would trigger a short entry and another different and higher price that would trigger a long entry.
+If the last breakout was a loser, the entry signal would be closer to the current price (i.e., the 20-day breakout) than it would be if it had been a winner, in which case the entry signal probably would be farther away, at the 55 day breakout.
+
+---
+
+System 2 Entry
+We entered when the price exceeded by a single tick the high or low of the preceding 55 days.
+If the price exceeded the 55-day high, the Turtles would buy 1 unit to initiate a long position in the corresponding commodity.
+If the price dropped one tick below the low of the last 55 days, the Turtles would sell 1 unit to initiate a short position.
+
+All breakouts for System 2 would be taken whether or not the previous breakout had been a winner.
+
+---
+
+Adding Units
+Turtles entered single-unit long positions at the breakouts and added to those positions at 1⁄2N intervals after their initial entry.
+This 1⁄2N interval was based on the actual fill price of the previous order.
+Thus, if an initial breakout order slipped by 1⁄2N, the new order would be 1 full N past the breakout to account for the 1⁄2N slippage, plus the normal 1⁄2N unit add interval.
+
+This would continue right up to the maximum permitted number of units.
+If the market moved quickly enough, it was possible to add the maximum 4 units in a single day.
+
+Here is an example.
+
+Gold
+N = 2.50
+55-day breakout = 310
+First unit added    310.00
+Second unit         310.00 + 1/2 * 2.50, or 311.25
+Third unit          311.25 + 1/2 * 2.50, or 312.50
+Fourth unit         312.50 + 1/2 * 2.50, or 313.75
+
+Crude Oil
+N = 1.20
+55-day breakout = 28.30
+First unit added    28.30
+Second unit         28.30 + 1/2 * 1.20, or 28.90
+Third unit          28.90 + 1/2 * 1.20, or 29.50
+Fourth unit         29.50 + 1/2 * 1.20, or 30.10
+
+---
+
+Consistency
+The Turtles were told to be very consistent in taking entry signals because most of the profits in a particular year might come from only two or three large winning trades.
+If a signal was skipped or missed, this could have a great effect on the returns for the year.
+
+The Turtles with the best trading records consistently applied the entry rules.
+The Turtles with the worst records and all those who were dropped from the program failed to enter positions consistently when the rules indicated.
