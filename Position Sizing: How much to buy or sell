@@ -1,0 +1,203 @@
+Position Sizing: How Much to Buy or Sell
+The decision about how much to buy or sell is fundamental, yet it often is glossed over or handled improperly by most traders.
+关于买卖多少的决定是至关重要的,但是大多数交易员往往会对其忽略或者处理不当.
+
+How much to buy or sell affects both diversification and money management.
+买卖多少会影响多元化和资金管理.
+Diversification is an attempt to spread risk across many instruments and increase the opportunity for profit by increasing the opportunities for catching successful trades.
+多元化是尝试在多种工具中分散风险,并通过增加成功交易的机会来增加获利机会.
+Proper diversification requires making similar, if not identical, bets on many different instruments.
+适当的多样化要求在许多不同的工具上进行类似的投资.
+Money management is really about controlling risk by not betting so much that you run out of money before the good trends come.
+资金管理实际上是关于控制风险,不要下太多的赌注,以免在好的趋势到来之前就把钱花光.
+
+How much to buy or sell is the single most important aspect of trading.
+买卖多少是交易中最重要的一个方面.
+Most beginning traders risk far too much on each trade and greatly increase their chances of going bust even if they have an otherwise valid trading style.
+大多数初级交易员在每次交易中都冒很大的风险,即使他们拥有其他有效的交易方式,也会大大增加他们破产的几率.
+
+---
+
+Position Sizing
+The Turtles used a position sizing algorithm that was very advanced for its day because it normalized the dollar volatility of a position by adjusting the position size on the basis of the dollar volatility of the market.
+海龟们使用的头寸规模算法在那个时代非常先进,因为它使一个头寸的美元波动标准化了,这是通过基于这个市场的美元波动来调整头寸规模实现的.
+That meant that a specific position would tend to move up or down on a specific day about the same amount in dollar terms (compared with positions in other markets) regardless of the underlying volatility of that particular market.
+这意味着,无论一个特定市场的潜在波动如何,以美元计算,这个特定市场的头寸在某一天的涨跌幅度大致相同(与其他市场上的头寸相比).
+
+This was done because positions in markets that moved up and down a large amount per contract would have an offsetting smaller number of contracts than would positions in markets that had lower volatility.
+
+This volatility normalization was very important because it meant that different trades in different markets tended to have the same chance for a particular dollar loss or a particular dollar gain.
+这种波动标准化是非常重要的,因为这意味着在不同市场上的交易往往具有相同的概率来赚一美元或者亏一美元.
+This increased the effectiveness of the diversification of trading across many markets.
+
+Even if the volatility of a specific market was lower, any significant trend would result in a sizable win because the Turtles would have held more contracts of that lower volatility commodity.
+即使一个特定市场的波动较低,任何显著的趋势都将带来可观的收益,因为海龟们会持有更多波动低的商品合约.
+
+---
+
+Volatility: The Meaning of N
+The Turtles used a concept that Richard Dennis and Bill Eckhardt called N to represent the underlying volatility of a particular market.
+海龟们使用Richard Dennis和Bill Eckhardt称为N的概念来代表一个特定市场的潜在波动.
+N is simply the 20-day exponential moving average of the true range, which is now more commonly known as the Average True Range (or ATR).
+Conceptually, N represents the average range in price movement that a particular market experiences in a single day, accounting for opening gaps.
+N was measured in the same points as the underlying contract.
+
+To compute the daily true range, one uses the following relationship:
+    True range = maximum(H – L, H – PDC, PDC – L)
+where
+    H = current high
+    L = current low
+    PDC = previous day’s close
+
+To compute N, one can use the following formula:
+    N = (19 * PDN + TR) / 20
+where
+    PDN = previous day’s N
+    TR = current day’s true range
+
+Since this formula requires a previous day’s N value, you must start with a 20-day simple average of the true range for the initial calculation.
+
+---
+
+Dollar Volatility Adjustment
+The first step in determining the position size was to determine the dollar volatility represented by the underlying market’s price volatility (defined by its N).
+确定头寸规模的第一步是确定市场的价格波动(N)所代表的美元波动.
+
+This sounds more complicated than it is. It is determined by using the following simple formula:
+    Dollar volatility = N * dollars per point
+
+---
+
+Volatility-Adjusted Position Units
+The Turtles built positions in pieces that we called units.
+海龟们把头寸分为一个个单位,我们称之为头寸单位.
+Units were sized so that 1N represented 1 percent of the account equity.
+
+Thus, the unit size for a specific market or commodity can be calculated by using the following formula:
+    Unit size = 1% of account / market dollar volatility
+    or
+    Unit size = 1% of account / N * dollars per point
+    
+Following are some examples.
+
+---
+
+Heating Oil HO03H
+Consider the following prices, true range, and N values for March 2003 heating oil:
+Date        High    Low     Close       True Range      N
+11/1/2002   0.7220  0.7124  0.7124      0.0096          0.0134
+11/4/2002   0.7170  0.7073  0.7073      0.0097          0.0132
+11/5/2002   0.7099  0.6923  0.6923      0.0176          0.0134
+11/6/2002   0.6930  0.6800  0.6838      0.0130          0.0134
+11/7/2002   0.6960  0.6736  0.6736      0.0224          0.0139
+11/8/2002   0.6820  0.6706  0.6706      0.0114          0.0137
+11/11/2002  0.6820  0.6710  0.6710      0.0114          0.0136
+11/12/2002  0.6795  0.6720  0.6744      0.0085          0.0134
+11/13/2002  0.6760  0.6550  0.6616      0.0210          0.0138
+11/14/2002  0.6650  0.6585  0.6627      0.0065          0.0134
+11/15/2002  0.6701  0.6620  0.6701      0.0081          0.0131
+11/18/2002  0.6965  0.6750  0.6965      0.0264          0.0138
+11/19/2002  0.7065  0.6944  0.6944      0.0121          0.0137
+11/20/2002  0.7115  0.6944  0.7087      0.0171          0.0139
+11/21/2002  0.7168  0.7100  0.7124      0.0081          0.0136
+11/22/2002  0.7265  0.7120  0.7265      0.0145          0.0136
+11/25/2002  0.7265  0.7098  0.7098      0.0167          0.0138
+11/26/2002  0.7184  0.7110  0.7184      0.0086          0.0135
+11/27/2002  0.7280  0.7200  0.7228      0.0096          0.0133
+12/2/2002   0.7375  0.7227  0.7359      0.0148          0.0134
+12/3/2002   0.7447  0.7310  0.7389      0.0137          0.0134
+12/4/2002   0.7420  0.7140  0.7162      0.0280          0.0141
+
+The unit size for December 6, 2002, using the N value of 0.0141 from December 4, is as follows:
+Heating oil:
+N = 0.0141
+Account size = $1,000,000
+Dollars per point = 42,000 (42,000-gallon contracts with price quoted in dollars)
+Unit size = (0.01 * $1,000,000) / (0.0141 * 42,000) = 16.88
+
+Since it is not possible to trade partial contracts, this would be truncated to an even 16 contracts.
+
+You might ask: “How often is it necessary to compute the values for N and the unit size?”
+The Turtles were provided with a unit size sheet on Monday of each week that listed N and the unit size in contracts for each of the futures that we traded.
+
+---
+
+The Importance of Position Sizing
+Diversification is an attempt to spread risk across many instruments and increase the opportunity for profit by increasing the opportunities to catch successful trades.
+To diversify properly requires making similar if not identical bets on many different instruments.
+
+The Turtle System used market volatility to measure the risk involved in each market.
+海龟交易系统利用市场波动来衡量每个市场的风险.
+We then used that risk measurement to build positions in increments that represented a constant amount of risk (or volatility).
+That enhanced the benefits of diversification and increased the likelihood that winning trades would offset losing trades.
+这增加了多元化的好处,增加了盈利交易抵消亏损交易的可能性.
+
+Note that this diversification is much harder to achieve when one is using insufficient trading capital.
+请注意,如果没有足够的资金时,这种多样化是很难实现的.
+Consider the above example if a $100,000 account had been used.
+The unit size would have been a single contract, since 1.688 truncates to 1.
+For smaller accounts, the granularity of the adjustment is too large, and this greatly reduces the effectiveness of diversification.
+对于小账户来说,调整的粒度太大,这大大降低的多元化的有效性.
+
+---
+
+Units as a Measure of Risk
+Since the Turtles used the unit as the base measure for position size and since those units were adjusted for volatility risk, the unit was a measure of the risk both of a position and of the entire portfolio of positions.
+由于海龟们使用头寸单位来衡量头寸规模,并且由于这些头寸单位是根据波动风险进行调整的,因此头寸单位是衡量一个头寸和整个头寸组合的风险的指标.
+
+The Turtles were given risk management rules that limited the number of units that we could maintain at any specific time on four different levels.
+海龟们被传授风险管理规则,限制了海龟们在任何时间在四个不同层面上可以保持的头寸单位数量.
+In essence, those rules controlled the total risk that a trader could carry, and those limits minimized losses during prolonged losing periods as well as during extraordinary price movements.
+实质上,这些规则控制了交易者可以承担的总风险,并且这些限制使长期亏损期间以及特殊价格变动期间的损失最小化.
+
+An example of an extraordinary price movement was the day after the October 1987 stock market crash.
+The U.S. Federal Reserve lowered interest rates by several percentage points overnight to boost the confidence of the stock market and the country.
+The Turtles were loaded short in interest-rate futures: eurodollars, T-bills, and bonds.
+海龟们都做空了利率期货:欧元,美国国债,债券.
+The losses the next day were enormous.
+In most cases, 40 to 60 percent of account equity was lost in a single day.
+However, those losses would have been correspondingly higher without the maximum position limits.
+
+The limits were as follows:
+Level   Type                            Maximum Units
+1       Single market                   4
+2       Closely correlated markets      6
+3       Loosely correlated markets      10
+4       Single direction, long or short 12
+
+Single markets: A maximum of 4 units per market.
+
+Closely correlated markets: For markets that were closely correlated, there could be a maximum of 6 units in one particular direction (i.e., 6 long units or 6 short units).
+Closely correlated market groups include heating oil and crude oil; gold and silver; the currencies as a group; interest rate futures such as T-bills and eurodollars; and so on.
+
+Loosely correlated markets: For loosely correlated markets, there could be a maximum of 10 units in one particular direction.
+Loosely correlated markets included gold and copper; silver and copper; and many grain combinations that the Turtles did not trade because of position limits.
+
+Single direction: The maximum number of total units in one direction long or short was 12 units.
+Thus, one theoretically could have had 12 units long and 12 units short at the same time.
+
+The Turtles used the term loaded to represent having the maximum permitted number of units for a particular risk level.
+Thus, loaded in yen meant having the maximum 4 units of Japanese yen contracts, completely loaded meant having 12 units, and so forth.
+
+---
+
+Adjusting Trading Size
+There are times when the market does not trend for many months.
+有时候,市场会有好几个月没有趋势.
+During those times, it is possible to lose a significant percentage of the equity of the account.
+
+After large winning trades close out, one may want to increase the size of the equity used to compute position size.
+
+The Turtles did not trade normal accounts with a running balance based on the initial equity.
+We were given notional accounts with a starting equity of zero and a specific account size.
+For example, many Turtles received a notional account size of $1 million when we started trading in February 1983.
+That account size was adjusted each year at the beginning of the year.
+It was adjusted up or down depending on the success of the trader as measured subjectively by Rich.
+The increase or decrease typically represented something close to the addition of the gains or losses that were made in the account during the preceding year.
+
+The Turtles were instructed to decrease the size of the notional account by 20 percent each time we went down 10 percent of the original account.
+Thus, if a Turtle trading a $1,000,000 account ever was down 10 percent, or $100,000, we would begin trading as if we had an $800,000 account until we reached the yearly starting equity.
+If we lost another 10 percent (10 percent of $800,000 or $80,000, for a total loss of $180,000), we would reduce the account size by another 20 percent for a notional account size of $640,000.
+
+There are other, perhaps better strategies for reducing or increasing equity as the account goes up or down.
+These are the rules that the Turtles used.
